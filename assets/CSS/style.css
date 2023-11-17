@@ -108,7 +108,7 @@ header .icon-nav {
 }
 
 .collection-section{
-    margin-top: 6rem;
+    margin-top: 7rem;
 }
 .collection-section h2{
     text-transform: capitalize;
@@ -129,7 +129,7 @@ header .icon-nav {
 }
 
 .product-section{
-    margin-top: 6rem;
+    margin-top: 7rem;
 }
 
 .product-section .text-head{
@@ -176,7 +176,26 @@ header .icon-nav {
 
 .product-section span .old-price{
     color: #979797;
+}
 
+@media screen and (min-width: 310px) and (max-width: 768px) {
+    .section-banner .img-banner img{
+        height: 40rem;
+    object-fit: cover;
+    }
+    .section-banner {
+        margin-top: 7rem;
+    }
+    .collection-section{
+        margin-top: 7rem;
+    }
+    .product-section{
+        margin-top: 7rem;
+    }
+}
+
+.section-banner {
+    margin-top: 7rem;
 }
 
 .section-banner 
@@ -189,6 +208,7 @@ header .icon-nav {
     background: rgba(255,255,255,.8);
     border-radius: 3rem;
 } 
+
 .section-banner 
 .banner-content h3{
     font-size: 2.7rem;
@@ -203,6 +223,8 @@ header .icon-nav {
     font-size: 2rem;
     margin-bottom: 2.5rem;
 }
+
+
 
 .section-banner .banner-content a{
     display: inline-block;
@@ -221,3 +243,61 @@ header .icon-nav {
 .banner-content a:hover{
 background: #ff91af;
 }
+
+.section-banner .banner-content:after{
+    content: "";
+    position: absolute;
+    bottom: -1.2rem;
+    top: -1.2rem;
+    left: -1.2rem;
+    right: -1.2rem;
+    border: .5rem solid rgba(255,255,255,.9);
+    border-radius: 4rem;
+    z-index: -1;
+}
+
+.section-flash{
+    padding-top: 7rem;
+    padding-bottom: 3rem;
+    background: #f9f9f9;
+}
+
+
+
+.section-flash h4{
+    font-size: 2.4rem;
+    font-weight: 500;
+    line-height: 1.2;
+    color: #111;
+    letter-spacing: .1rem;
+    text-transform: uppercase;
+    padding-bottom: 1rem;
+}
+
+.section-flash .slide-img{
+    margin-bottom: 3rem;
+}
+
+.section-flash .slide-img a{
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: #111;
+    line-height: 2.8rem;
+    margin-bottom: 1rem;
+}
+
+.section-flash .slide-img .slide-head{
+    padding-top: 4rem;
+}
+
+.section-flash .slide-img span s{
+color: #979797;
+}
+.section-flash .slide-img span{
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #ff91af;
+    margin-bottom: 1rem;
+}
+
+
