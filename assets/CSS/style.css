@@ -29,6 +29,11 @@ body {
     box-sizing: border-box;
 }
 
+img{
+    width: 100%;
+    display: block;
+    }
+
 header .logo {
     width: 13rem;
     height: 5.3rem;
@@ -88,7 +93,7 @@ header .icon-nav {
     padding: 1.5rem 4rem;
     border: none;
 }
-.slick-slide button:hover{
+.image-container button:hover{
     color: white;
     background: #ff91af !important;
     transition: all 1.5s ease;
@@ -96,12 +101,15 @@ header .icon-nav {
 
 
 
-.slick-slide .img-text{
+.image-container .img-text{
     position: absolute;
     top: 50%;
     transform: translate(0%,-50%);
 }
 
+.collection-section{
+    margin-top: 6rem;
+}
 .collection-section h2{
     text-transform: capitalize;
     font-size: 4rem;
@@ -120,6 +128,13 @@ header .icon-nav {
     /* color: ; */
 }
 
+.product-section{
+    margin-top: 6rem;
+}
+
+.product-section .text-head{
+    margin-bottom: 4rem;
+}
 .product-section h5{
     font-size: 2.4rem;
     font-weight: 500;
@@ -128,7 +143,6 @@ header .icon-nav {
     letter-spacing: .1rem;
     text-transform: uppercase;
     padding-bottom: 1rem;
-    padding-top: 3rem;
 }
 .product-section p{
     font-size: 1.7rem;
