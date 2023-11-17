@@ -1,48 +1,101 @@
-
-html{
+html {
     font-size: 10px;
-	@media (max-width: 1400px) {
-		font-size: 10px;
-	}
-	@media (max-width: 1200px) {
-		font-size: 9.722222222222221px;
-	}
-	@media (max-width: 992px) { 
-		font-size: 8.25925925925926px;
-	}
-	@media (max-width: 768px) {
-		font-size: 7.333333333333334px;
-	}
-	@media (max-width: 576px) {
-		font-size: 6.101851851851853px;
+
+    @media (max-width: 1400px) {
+        font-size: 10px;
+    }
+
+    @media (max-width: 1200px) {
+        font-size: 9.722222222222221px;
+    }
+
+    @media (max-width: 992px) {
+        font-size: 8.25925925925926px;
+    }
+
+    @media (max-width: 768px) {
+        font-size: 7.333333333333334px;
+    }
+
+    @media (max-width: 576px) {
+        font-size: 6.101851851851853px;
     }
 }
 
 
 
-body{
+body {
     font-family: 'Jost', sans-serif;
+    box-sizing: border-box;
 }
 
-header .logo{
+header .logo {
     width: 13rem;
     height: 5.3rem;
 }
-header ul .nav-link{
+
+header ul .nav-link {
     font-size: 1.5rem;
     font-weight: 600;
     color: #343434;
     text-transform: unset;
 }
-header ul .nav-link:hover{
-    color: #e83e8c !important ;
+
+header ul .nav-link:hover {
+    color: #ee599e !important;
     text-decoration: underline;
     transition: all 1s ease;
 }
 
-header .icon-nav{
-    width:  2.4rem;
+header .icon-nav {
+    width: 2.4rem;
     height: 2.4rem;
     margin-left: 1.5rem;
     cursor: pointer;
+}
+
+.slick-slide img {
+    width: 100%;
+    display: block;
+    /* overflow-x: hidden; */
+    object-fit: cover;
+     
+}
+
+.slick-slide h4{
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+    letter-spacing: .2rem;
+    padding-bottom: 3.4rem;
+}
+.slick-slide h1{
+    font-size: 5rem;
+    font-weight: 700;
+    margin-bottom: 3.5rem;
+    letter-spacing: .05em;
+    line-height: 8rem;
+    
+}
+.slick-slide button{
+    letter-spacing: .2rem;
+    font-weight: 600;
+    font-size: 1.4rem;
+    line-height: 1;
+    color: black;
+    background:white;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 1.5rem 4rem;
+    border: none;
+}
+.slick-slide button:hover{
+    color: white;
+    background: #ee599e !important;
+}
+
+
+.slick-slide .img-text{
+    position: absolute;
+    top: 50%;
+    transform: translate(0%,-50%);
 }
