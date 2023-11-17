@@ -167,6 +167,10 @@ header .icon-nav {
     text-decoration: none;
 }
 
+.product-section a:hover{
+    color: #ff91af;
+}
+
 .product-section span{
     font-size: 1.5rem;
     font-weight: 700;
@@ -306,3 +310,12 @@ color: #979797;
 }
 
 
+#arival-slider .slick-next{
+    background-color: white;
+    right: 0;
+    height: 4rem;
+    width: 4rem;
+    box-shadow: 0 1.5rem 2.5rem #00000014;
+    border-radius: 50%;
+    /* background-image: url("../images/1.1.jpg"); */
+}
