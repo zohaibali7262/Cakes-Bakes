@@ -21,11 +21,11 @@
   <link rel="stylesheet" href="./assets/CSS/style.css">
 
 
-  <link rel="stylesheet" href="./assets/CSS/slick-theme.css">
-  <link rel="stylesheet" href="./assets/CSS/slick.css
-  ">
+  <!-- <link rel="stylesheet" href="./assets/CSS/slick-theme.css">
+  <link rel="stylesheet" href="./assets/CSS/slick.css"> -->
 
-
+  <!-- <link rel="stylesheet" href="./assets/CSS/slick-theme.less"> -->
+  <!-- <link rel="stylesheet" href="./assets/CSS/slick.less"> -->
 
 
 
@@ -34,7 +34,7 @@
 <body>
 
   <header>
-    <nav class="navbar navbar-expand-lg shadow-sm py-5 fixed-top">
+    <nav class="navbar navbar-expand-lg shadow-sm bg-white py-5 fixed-top z-3">
       <div class="container-fluid">
         <img class="logo" src="./assets/images/logo.png" alt="logo">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -58,15 +58,14 @@
             <li class="nav-item ms-5">
               <a class="nav-link active " aria-current="page" href="#blog">Blogs</a>
             </li>
-
-
           </ul>
+
           <ul class="d-flex align-items-center justify-content-center mt-3 me-3 ">
-         <img class="icon-nav" src="assets/images/svg/search.svg" alt="">
-         <img class="icon-nav" src="assets/images/svg/user.svg" alt="">
-         <img class="icon-nav" src="assets/images/svg/heart.svg" alt="">
-         <img class="icon-nav" src="assets/images/svg/store.svg" alt="">
-           
+            <img class="icon-nav" src="assets/images/svg/search.svg" alt="">
+            <img class="icon-nav" src="assets/images/svg/user.svg" alt="">
+            <img class="icon-nav" src="assets/images/svg/heart.svg" alt="">
+            <img class="icon-nav" src="assets/images/svg/store.svg" alt="">
+
           </ul>
         </div>
       </div>
@@ -74,10 +73,10 @@
   </header>
 
 
+
   <!-- Slick Slider Section -->
 
   <section>
-
     <div class="slick-slide">
       <div class="position-relative">
         <img src="./assets/images/s1.jpg" alt="">
@@ -92,23 +91,122 @@
           </div>
         </div>
       </div>
-      <div class="">
+      <div class="position-relative">
         <img src="./assets/images/s2.jpg" alt="">
+        <div class="container ">
+          <div class="img-text">
+            <h4 class="">Cake Store</h4>
+            <h1 class="">Garlic Bread</h1>
+            <button class="bg-black text-white">
+              Shop Now
+            </button>
+          </div>
+        </div>
       </div>
     </div>
 
   </section>
 
+  <section class="collection-section">
+    <div class="container-fluid">
+      <h2 class="text-center">Welcome To Confectionery
+      </h2>
 
-  <section class="section-collection">
-
-    <div class="container">
-      <!-- <h2 class="text-center">Welcome To Confectionery
-      </h2> -->
+      <div class="row gx-4 mb-5">
+        <div class="col-xl-4 col-lg-4 col-md-6 col-12 ">
+          <img src="./assets/images/ba2.jpg" alt="">
+        </div>
+        <div class="col-xl-4 col-lg-4 col-md-6 col-12 ">
+          <img src="./assets/images/ba4.jpg" alt="">
+        </div>
+        <div class="col-xl-4 col-lg-4 col-md-6 col-12 ">
+          <img src="./assets/images/ba3.jpg" alt="">
+        </div>
+      </div>
     </div>
-
-
   </section>
+
+  <section class="product-section">
+    <div class="mb-5">
+    <h5 class="text-center">Best Seller</h5>
+    <p class="text-center">Best Seller Product This Week!
+    </p></div>
+    <div class="container-fluid">
+      <div class="row gx-4 mb-5">
+        <div class="col-xl-3 col-lg-3 col-md-6 col-12">
+          <img src="./assets/images/4.1.jpg" alt="">
+          <div class="d-flex flex-column">
+            <a class="" href="">Sweet Cakes</a> <br>
+            <span class="text-center">$12.00
+            </span>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-3 col-md-6 col-12">
+          <img src="./assets/images/3.1.jpg" alt="">
+          <div class="d-flex flex-column">
+            <a class="" href="">Spider Cupcakes</a> <br>
+            <span class="text-center">$13.00
+            </span>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-3 col-md-6 col-12">
+          <img src="./assets/images/2.1.jpg" alt="">
+          <div class="d-flex flex-column">
+            <a class="" href="">Seasam Buns</a> <br>
+            <span class="text-center">$24.00
+            </span>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-3 col-md-6 col-12">
+          <img src="./assets/images/1.1.jpg" alt="">
+          <div class="d-flex flex-column">
+            <a class="" href="">Pumpkin Brownie Cupcakes</a> <br>
+            <span class="text-center">$22.00
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <div class="row gx-4">
+        <div class="col-xl-3 col-lg-3 col-md-6 col-12">
+          <img src="./assets/images/6.1.jpg" alt="">
+          <div class="d-flex flex-column">
+            <a class="" href="">Macarons</a> <br>
+            <span class="text-center">$16.00
+            </span>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-3 col-md-6 col-12">
+          <img src="./assets/images/7.1.jpg" alt="">
+          <div class="d-flex flex-column">
+            <a class="" href="">Incredible Cotton</a> <br>
+            <span class="text-center"><s class="px-3 old-price">$26.00</s>$22.00
+            </span>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-3 col-md-6 col-12">
+          <img src="./assets/images/8.1.jpg" alt="">
+          <div class="d-flex flex-column">
+            <a class="" href="">Incredible Copper Pants</a> <br>
+            <span class="text-center">$22.00
+            </span>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-3 col-md-6 col-12">
+          <img src="./assets/images/15.1.jpg" alt="">
+          <div class="d-flex flex-column">
+            <a class="" href="">Ergonomic Granite Chair</a> <br>
+            <span class="text-center"><s class="px-3 old-price">$15.00</s> $12.00
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
 
 
   <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>

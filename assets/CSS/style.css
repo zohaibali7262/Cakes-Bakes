@@ -42,7 +42,7 @@ header ul .nav-link {
 }
 
 header ul .nav-link:hover {
-    color: #ee599e !important;
+    color: #ff91af !important;
     text-decoration: underline;
     transition: all 1s ease;
 }
@@ -90,12 +90,77 @@ header .icon-nav {
 }
 .slick-slide button:hover{
     color: white;
-    background: #ee599e !important;
+    background: #ff91af !important;
+    transition: all 1.5s ease;
 }
+
 
 
 .slick-slide .img-text{
     position: absolute;
     top: 50%;
     transform: translate(0%,-50%);
+}
+
+.collection-section h2{
+    text-transform: capitalize;
+    font-size: 4rem;
+    font-weight: 500;
+    margin:5rem 0;
+}
+
+.collection-section img{
+    border: 1rem solid red;
+    border-radius: 100rem;
+    width: 100%;
+    display: block;
+}
+
+.collection-section img:hover{
+    /* color: ; */
+}
+
+.product-section h5{
+    font-size: 2.4rem;
+    font-weight: 500;
+    line-height: 1.2;
+    color: #111;
+    letter-spacing: .1rem;
+    text-transform: uppercase;
+    padding-bottom: 1rem;
+    padding-top: 3rem;
+}
+.product-section p{
+    font-size: 1.7rem;
+    font-weight: 500;
+    color: #666;
+    padding-top: 2rem;
+    display: block;
+}
+
+.product-section img{
+    width: 100%;
+    display: block;
+}
+
+.product-section a{
+    font-size: 1.6rem;
+    font-weight: 500;
+    padding-top: 2rem;
+    color: #111;
+    padding-bottom:0;
+    text-align: center;
+    text-decoration: none;
+}
+
+.product-section span{
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #ff91af;
+    text-align: center;
+}
+
+.product-section span .old-price{
+    color: #979797;
+
 }
