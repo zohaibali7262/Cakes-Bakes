@@ -54,7 +54,7 @@ header .icon-nav {
     cursor: pointer;
 }
 
-.slick-slide img {
+.image-container img {
     width: 100%;
     display: block;
     /* overflow-x: hidden; */
@@ -62,13 +62,13 @@ header .icon-nav {
      
 }
 
-.slick-slide h4{
+.image-container h4{
     font-size: 2.5rem;
     line-height: 2.5rem;
     letter-spacing: .2rem;
     padding-bottom: 3.4rem;
 }
-.slick-slide h1{
+.image-container h1{
     font-size: 5rem;
     font-weight: 700;
     margin-bottom: 3.5rem;
@@ -76,7 +76,7 @@ header .icon-nav {
     line-height: 8rem;
     
 }
-.slick-slide button{
+.image-container button{
     letter-spacing: .2rem;
     font-weight: 600;
     font-size: 1.4rem;
@@ -163,4 +163,47 @@ header .icon-nav {
 .product-section span .old-price{
     color: #979797;
 
+}
+
+.section-banner 
+.banner-content{
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    padding: 5% 7%;
+    background: rgba(255,255,255,.8);
+    border-radius: 3rem;
+} 
+.section-banner 
+.banner-content h3{
+    font-size: 2.7rem;
+    font-weight: 700;
+    margin: 0 0 0.5em;
+    line-height: 1.4;
+    text-transform: capitalize;
+    /* color:; */
+}
+
+.section-banner .banner-content p {
+    font-size: 2rem;
+    margin-bottom: 2.5rem;
+}
+
+.section-banner .banner-content a{
+    display: inline-block;
+    font-weight: 500;
+    color: white;
+    font-size: 1.4rem;
+    line-height: 1;
+    padding: 1.5rem 3rem;
+    letter-spacing: .1rem;
+    transition: all .3s;
+    border-radius: .4rem;
+    background: #111;
+    width: fit-content;
+}
+.section-banner 
+.banner-content a:hover{
+background: #ff91af;
 }
