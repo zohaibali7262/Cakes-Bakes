@@ -271,7 +271,7 @@ background: #ff91af;
     color: #111;
     letter-spacing: .1rem;
     text-transform: uppercase;
-    padding-bottom: 1rem;
+    padding-bottom: 4rem;
 }
 
 .section-flash .slide-img{
@@ -285,6 +285,11 @@ background: #ff91af;
     line-height: 2.8rem;
     margin-bottom: 1rem;
 }
+
+.section-flash .slide-img a:hover{
+    color: #ff91af;
+}
+
 
 .section-flash .slide-img .slide-head{
     padding-top: 4rem;
