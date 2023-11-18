@@ -182,21 +182,6 @@ header .icon-nav {
     color: #979797;
 }
 
-@media screen and (min-width: 310px) and (max-width: 768px) {
-    .section-banner .img-banner img{
-        height: 40rem;
-    object-fit: cover;
-    }
-    .section-banner {
-        margin-top: 7rem;
-    }
-    .collection-section{
-        margin-top: 7rem;
-    }
-    .product-section{
-        margin-top: 7rem;
-    }
-}
 
 .section-banner {
     margin-top: 7rem;
@@ -318,4 +303,204 @@ color: #979797;
     box-shadow: 0 1.5rem 2.5rem #00000014;
     border-radius: 50%;
     /* background-image: url("../images/1.1.jpg"); */
+}
+
+.content-section{
+    padding-top: 5rem;
+    padding-bottom: 3.5rem;
+}
+
+.content-section .date-head{
+    position: absolute;
+    box-shadow: 0 .3rem 1rem #00000014;
+    width: 6.8rem;
+    height: 6.8rem;
+    background-color: #fff;
+    color: #111;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+    top: 3.6rem;
+    left: 3.6rem;
+    padding: 1rem 0;
+}
+.content-section .date-head 
+.day:after{
+    content: "";
+    background-color: #111;
+    width: 2.7rem;
+    height: .1rem;
+    display: block;
+    margin: .4rem auto 0;
+}
+
+.content-section h4 a:after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    height: .1rem;
+    width: 5rem;
+    background: #ff91af;
+}
+
+.content-section .date-head .day{
+    font-size: 1.4rem;
+    display: block;
+}
+.content-section .date-head .month{
+    font-size: 1rem;
+    display: block;
+    padding-top: .4rem;
+    letter-spacing: .3em;
+}
+
+.content-section h2{
+    font-size: 2.4rem;
+    font-weight: 500;
+    line-height: 1.2;
+    color: #111;
+    letter-spacing: .1rem;
+    text-transform: uppercase;
+    position: relative;
+    padding-bottom: 1rem;
+}
+
+.content-section h2:after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    height: .2rem;
+    width: 5rem;
+    background: #ff91af;
+}
+
+.content-section a{
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 2.4rem;
+    color: #83868c;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.content-section h4 a{
+    position: relative;
+    font-size: 2.2rem;
+    color: #111;
+    font-weight: 500;
+    transition: all .3s ease;
+    padding-bottom: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.content-section h4 a:hover, 
+.content-section a:hover{
+    color: #ff91af;
+}
+
+.content-section p {
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: #83868c;
+}
+
+.footer{
+    padding: 5rem 0 4rem;
+    background: #f9f9f9;
+
+    
+}
+
+.footer .footer-logo{
+    width: 17rem;
+    height: 7rem;
+}
+
+.footer p{
+    font-weight: 400;
+    margin-top: 2.3rem;
+    font-size: 1.4rem;
+}
+.footer .list-icon{
+    margin-top: 2rem;
+}
+
+.footer .info-footer .title-footer h4{
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.footer .info-footer .title-footer h4:after{
+    content: "";
+    display: block;
+    height: .1rem;
+    width: 3rem;
+    margin-top: 2rem;
+    background-color: #111;
+}
+
+.footer .info-footer ul li a{
+    font-weight: 400;
+    line-height: 3.4rem;
+    color: #111;
+    text-decoration: none;
+    transition: all .25s ease-in-out;
+    font-size: 1.5rem;
+}
+
+.footer .info-footer ul li a:hover{
+    color: #ff91af;
+    transition: all 1s ease;
+}
+
+.copy-right{
+    border-top: .1rem solid #eee;
+    padding: 2.6rem 0;
+}
+
+.copy-right p a{
+    text-decoration: none;
+    color: #111;
+}
+.copy-right p a:hover{
+    color: #ff91af;
+    transition: all 1s ease;
+    text-decoration: underline;
+}
+
+.copy-right img{
+    width: 24.7rem;
+    height: 2.5rem;
+}
+
+
+
+@media screen and (min-width: 310px) and (max-width: 768px) {
+    .section-banner .img-banner img{
+        height: 40rem;
+    object-fit: cover;
+    }
+    .section-banner {
+        margin-top: 7rem;
+    }
+    .collection-section{
+        margin-top: 7rem;
+    }
+    .product-section{
+        margin-top: 7rem;
+    }
+
+    .copy-right{
+
+        display: flex;
+        justify-content: center;
+        
+       }
+
+  
+
 }
