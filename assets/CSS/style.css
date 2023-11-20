@@ -52,7 +52,7 @@ header ul .nav-link:hover {
     transition: all 1s ease;
 }
 
-header .icon-nav {
+.icon-nav {
     width: 2.4rem;
     height: 2.4rem;
     margin-left: 1.5rem;
@@ -211,9 +211,51 @@ header .icon-nav {
     display: block;
 }
 
-.product-section img{
-    width: 100%;
+.product-section .product-item{
+    position: relative;
+overflow: hidden;
+}
+
+.product-icon .icon-list:hover{
+    background: #ff91af;
+    opacity: 1;
+    color: white !important;
+
+}
+.product-icon .icon-list{
+    width: 4.6rem !important;
+    height: 4.6rem !important;
+    line-height: 4.6rem;
+    background-color: #fff;
+    box-shadow: 0 15px 25px #00000014;
+    border-radius: 50%;
+    padding: 1rem;
     display: block;
+    margin-bottom: 1rem;
+    transition: .5s;
+    color: #111;
+    font-size: 0;
+    cursor: pointer;
+
+}
+
+
+
+.product-item .product-icon{
+    position: absolute;
+    top: 70%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+.product-item:hover .product-icon {
+    opacity: 1;
 }
 
 .product-section a{
@@ -257,10 +299,17 @@ header .icon-nav {
     border-radius: 3rem;
 } 
 
+
+.section-banner 
+.banner-content{
+    width: 65%;
+}
+
 .section-banner 
 .banner-content h3{
-    font-size: 2.7rem;
-    font-weight: 700;
+    font-size: 5rem;
+    font-weight: 500;
+    color:black;
     margin: 0 0 0.5em;
     line-height: 1.4;
     text-transform: capitalize;
@@ -268,7 +317,7 @@ header .icon-nav {
 }
 
 .section-banner .banner-content p {
-    font-size: 2rem;
+    font-size: 2.2rem;
     margin-bottom: 2.5rem;
 }
 
@@ -542,6 +591,10 @@ color: #979797;
     .section-banner .img-banner img{
         height: 40rem;
     object-fit: cover;
+    }
+
+    .section-banner .banner-content{
+        width: 80%;
     }
     .section-banner {
         margin-top: 7rem;
