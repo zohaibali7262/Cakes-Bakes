@@ -211,6 +211,8 @@ header ul .nav-link:hover {
     display: block;
 }
 
+
+
 .product-section .product-item{
     position: relative;
 overflow: hidden;
@@ -220,8 +222,8 @@ overflow: hidden;
     background: #ff91af;
     opacity: 1;
     color: white !important;
-
 }
+
 .product-icon .icon-list{
     width: 4.6rem !important;
     height: 4.6rem !important;
@@ -241,6 +243,7 @@ overflow: hidden;
 
 
 
+
 .product-item .product-icon{
     position: absolute;
     top: 70%;
@@ -249,7 +252,7 @@ overflow: hidden;
     height: 100%;
     background: transparent;
     display: flex;
-    /* align-items: center; */
+    /* flex-direction: column; */
     justify-content: center;
     opacity: 0;
     transition: opacity 0.3s ease;
@@ -359,8 +362,6 @@ background: #ff91af;
     background: #f9f9f9;
 }
 
-
-
 .section-flash h4{
     font-size: 2.4rem;
     font-weight: 500;
@@ -368,12 +369,77 @@ background: #ff91af;
     color: #111;
     letter-spacing: .1rem;
     text-transform: uppercase;
-    padding-bottom: 4rem;
+    padding-bottom: 1.5rem;
+    position: relative;
+    margin-bottom: 6rem;
 }
+.section-flash h4:after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    height: .25rem;
+    width: 10rem;
+    background: #ff91af;
+}
+
 
 .section-flash .slide-img{
     margin-bottom: 3rem;
 }
+
+/* Hover Icon CSS */
+
+.section-flash .flash-item{
+    position: relative;
+overflow: hidden;
+}
+
+.flash-icon .flash-icon-list{
+    width: 4.6rem !important;
+    height: 4.6rem !important;
+    line-height: 4.6rem;
+    background-color: #fff;
+    box-shadow: 0 15px 25px #00000014;
+    border-radius: 50%;
+    padding: 1rem;
+    display: block;
+    margin-bottom: 1rem;
+    transition: .5s;
+    color: #111;
+    font-size: 0;
+    cursor: pointer;
+
+}
+
+
+.flash-icon 
+.flash-icon-list:hover{
+    background: #ff91af;
+    opacity: 1;
+    color: white !important;
+}
+
+.flash-item .flash-icon{
+    position: absolute;
+    top: 0;
+    left: 80%;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.flash-item:hover .flash-icon {
+    opacity: 1;
+} 
+
+
 
 .section-flash .slide-img a{
     font-size: 1.6rem;
@@ -482,7 +548,7 @@ color: #979797;
     left: 50%;
     transform: translate(-50%);
     height: .2rem;
-    width: 5rem;
+    width: 7rem;
     background: #ff91af;
 }
 
@@ -535,6 +601,9 @@ color: #979797;
 }
 .footer .list-icon{
     margin-top: 2rem;
+}
+.footer .list-icon i:hover{
+    color: #ff91af !important;
 }
 
 .footer .info-footer .title-footer h4{
