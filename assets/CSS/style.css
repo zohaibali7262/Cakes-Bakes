@@ -110,6 +110,8 @@ header .icon-nav {
 .collection-section{
     margin-top: 7rem;
 }
+
+
 .collection-section h2{
     text-transform: capitalize;
     font-size: 4rem;
@@ -117,17 +119,74 @@ header .icon-nav {
     margin:5rem 0;
 }
 
-.collection-section img{
-    border: 1rem solid red;
-    border-radius: 100rem;
-    width: 100%;
+.banner-item {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    border-radius: 50%;
+    border:1rem solid #ffdea6;
+  }
+
+.collection-section .banner-item:after{
+    content: "";
+    background: #ff91af;
+    opacity: 0;
     display: block;
-}
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: auto;
+    height: auto;
+    border-radius: 50%;
+    transform: scale(0);
+    -webkit-transform: scale(0);
+    transition: all .5s linear;
+    z-index: 1;
+  }
 
-.collection-section img:hover{
-    /* color: ; */
-}
+  .banner-item img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s linear;
+  }
 
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #ff91af;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s linear;
+  
+  }
+
+  .banner-item .overlay .title-head{
+    font-size: 3.2rem !important;
+    font-weight: 700 !important;
+    color: white;
+    opacity: 1;
+    transition:all .3s;
+    display: inline-block;
+  }
+
+  .banner-item:hover .overlay {
+    opacity: .9;
+  }
+
+  .banner-item:hover:hover img {
+    transform: scale(1.15);
+    transition: all 1s ease;
+  }
 .product-section{
     margin-top: 7rem;
 }
@@ -494,11 +553,13 @@ color: #979797;
         margin-top: 7rem;
     }
 
-    .copy-right{
+    .copy-right .payment-card,
+    .copy-right .copy-text{
 
         display: flex;
-        justify-content: center;
-        
+        justify-content: center !important;
+
+
        }
 
   
