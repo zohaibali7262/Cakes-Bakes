@@ -665,6 +665,152 @@ color: #979797;
 }
 
 
+/* Home2 CSS */
+
+.best-sell-section{
+    margin-top: 7rem;
+}
+
+.best-sell-section h4{
+    font-size: 2.4rem;
+    font-weight: 500;
+    line-height: 1.2;
+    color: #111;
+    letter-spacing: .1rem;
+    text-transform: uppercase;
+    position: relative;
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+.best-sell-section h4:before{
+    content: "";
+    width: 10rem;
+    height: .2rem;
+    background: #ff91af;
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translate(-50%);
+    bottom: 0;
+}
+
+.best-sell-section .tab-section .tab-btn{
+    margin-top: 2rem;
+    margin-bottom:5rem ;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+}
+
+.best-sell-section .tab-section .tab-btn button:hover {
+    background-color: #ff91af;
+    color: white;
+}
+
+.best-sell-section .tab-section .tab-btn  button.active {
+    background-color: #ff91af;
+    color: white;
+}
+
+.best-sell-section .tab-section .tabcontent {
+    display: none;
+    border-top: none;
+}
+
+.best-sell-section .tab-section .tab-btn button {
+    background: transparent;
+    display: inline-block;
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #ff91af;
+    text-transform: uppercase;
+    min-width: 11rem;
+    height: 4.2rem;
+    border: .1rem solid #ff91af;
+    padding: 0 1.5rem;
+    text-align: center;
+    cursor: pointer;
+    transition: all .25s linear 0s;
+    -webkit-transition: all .25s linear 0s;
+    -o-transition: all .25s linear 0s;
+    margin: 0 1rem;
+}
+
+
+.section-banner{
+    margin-top: 7rem;
+}
+
+.section-banner .content-banner{
+    padding: 5rem;
+    background: #ffd2d1;
+  
+
+}
+
+.section-banner .contain-img{
+    overflow: hidden;
+}
+
+
+
+.contain-img img:hover {
+    transform: scale(1.15);
+    transition: all .8s linear !important;
+  }
+
+.section-banner 
+.content-banner h3{
+    font-weight: 700;
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+}
+.section-banner 
+.content-banner p{
+    font-size: 1.8rem;
+    font-weight: 400;
+    margin-bottom: 3.5rem;
+}
+
+.section-banner 
+.content-banner a{
+    font-size: 1.6rem ;
+    padding: .8rem 1.5rem;
+    border-radius: .6rem;
+    text-transform: capitalize;
+    font-weight: 400;
+    transition: all .3s;
+    color: #ffffff;
+    background: #f84747;
+    text-decoration: none;
+    text-align: center;
+}
+
+.section-banner 
+.content-banner a:hover{
+    background: black;
+    color: white;
+
+}
+
+
+
+
+
+
+
+
+
+/* Media Queries Part */
+
+@media screen and (min-width: 769px) and (max-width: 1025px) {
+
+    .section-banner .content-banner{
+        padding: 1rem !important;
+        background: #ffd2d1;     
+    }
+}
 
 @media screen and (min-width: 310px) and (max-width: 768px) {
     .section-banner .img-banner img{
@@ -692,15 +838,14 @@ color: #979797;
     .product-section{
         margin-top: 7rem;
     }
-
     .image-container .img-content{
         position: absolute;
         top: 50%;
 
         transform: translate(-30%,-50%);
-        /* white-space: nowrap; */
         text-align: center;
     } 
+
 
     .copy-right .payment-card,
     .copy-right .copy-text{
@@ -708,6 +853,19 @@ color: #979797;
         display: flex;
         justify-content: center !important;
        }
+
+        /* Home2 Media Query CSS */
+
+    .order2{
+        order: 2;
+    }
+
+    .section-banner .content-banner{
+        padding: 12rem !important;
+        background: #ffd2d1;
+      
+    
+    }
 
   
 
