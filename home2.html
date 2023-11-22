@@ -114,39 +114,537 @@
         </div>
         <div class="tab-section">
             <div class="tab-btn">
-                <button class="tablinks" onclick="openCity(event, 'London')">NEW ARRIVALS
-                </button>
-                <button class="tablinks" onclick="openCity(event, 'Paris')"> BEST SELLERS
-                </button>
-                <button class="tablinks" onclick="openCity(event, 'Tokyo')">TOP RATES</button>
+                <ul class="nav nav-pills" id="pills-tab" role="tablist">
+                    <li class="nav-item tab-btn" role="presentation">
+                        <button class="text-uppercase active" id="pills-home-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
+                            aria-selected="true">New Arrivals</button>
+                    </li>
+                    <li class="nav-item tab-btn" role="presentation">
+                        <button class="text-uppercase" id="pills-profile-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile"
+                            aria-selected="false">Best Sellers</button>
+                    </li>
+                    <li class="nav-item tab-btn" role="presentation">
+                        <button class="text-uppercase" id="pills-contact-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact"
+                            aria-selected="false">Top RATES</button>
+                    </li>
+                </ul>
             </div>
+            <div class="tab-content" id="pills-tabContent">
 
-            <div class="row gx-4 gy-4 mb-5">
-                <div class="col-xl-3 col-lg-3 col-md-6 col-12">
-                    <div id="Arrival" class="tabcontent">
-                        <div class="product-item">
-                            <img src="./assets/images/4.1.jpg" alt="">
-                            <ul class="d-flex product-icon list-unstyled gap-4">
-                                <li><img class="icon-list" src="./assets/images/svg/store.svg" title="Add to Cart"
-                                        alt="">
-                                </li>
-                                <li><img class="icon-list" src="./assets/images/svg/search.svg" title="QuickView"
-                                        alt=""></li>
-                                <li><img class="icon-list" src="./assets/images/svg/heart.svg" title="Add to Wishlist"
-                                        alt=""></li>
-                            </ul>
+                <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"
+                    tabindex="0">
+                    <div class="row gx-4 gy-4 mb-5">
+                        <div class="col-xl-3 col-lg-3 col-md-6 col-12">
+                            <div class="product-item">
+                                <img src="./assets/images/4.1.jpg" alt="">
+                                <ul class="d-flex product-icon list-unstyled gap-4">
+                                    <li><img class="icon-list" src="./assets/images/svg/store.svg" title="Add to Cart"
+                                            alt="">
+                                    </li>
+                                    <li><img class="icon-list" src="./assets/images/svg/search.svg" title="QuickView"
+                                            alt=""></li>
+                                    <li><img class="icon-list" src="./assets/images/svg/heart.svg"
+                                            title="Add to Wishlist" alt=""></li>
+                                </ul>
+                            </div>
+                            <div class="d-flex flex-column">
+                                <a class="" href="">Sweet Cakes</a> <br>
+                                <span class="text-center">$12.00
+                                </span>
+                            </div>
+
                         </div>
-                        <div class="d-flex flex-column">
-                            <a class="" href="">Sweet Cakes</a> <br>
-                            <span class="text-center">$12.00
-                            </span>
+
+                        <div class="col-xl-3 col-lg-3 col-md-6 col-12">
+                            <div class="product-item">
+                                <img src="./assets/images/3.1.jpg" alt="">
+                                <ul class="d-flex product-icon list-unstyled gap-4">
+                                    <li><img class="icon-list" src="./assets/images/svg/store.svg" title="Add to Cart"
+                                            alt="">
+                                    </li>
+                                    <li><img class="icon-list" src="./assets/images/svg/search.svg" title="QuickView"
+                                            alt=""></li>
+                                    <li><img class="icon-list" src="./assets/images/svg/heart.svg"
+                                            title="Add to Wishlist" alt=""></li>
+                                </ul>
+                            </div>
+                            <div class="d-flex flex-column">
+                                <a class="" href="">Spider Cupcakes</a> <br>
+                                <span class="text-center">$13.00
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-3 col-lg-3 col-md-6 col-12">
+                            <div class="product-item">
+                                <img src="./assets/images/2.1.jpg" alt="">
+                                <ul class="d-flex product-icon list-unstyled gap-4">
+                                    <li><img class="icon-list" src="./assets/images/svg/store.svg" title="Add to Cart"
+                                            alt="">
+                                    </li>
+                                    <li><img class="icon-list" src="./assets/images/svg/search.svg" title="QuickView"
+                                            alt=""></li>
+                                    <li><img class="icon-list" src="./assets/images/svg/heart.svg"
+                                            title="Add to Wishlist" alt=""></li>
+                                </ul>
+                            </div>
+                            <div class="d-flex flex-column">
+                                <a class="" href="">Seasam Buns</a> <br>
+                                <span class="text-center">$24.00
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-3 col-lg-3 col-md-6 col-12">
+                            <div class="product-item">
+                                <img src="./assets/images/1.1.jpg" alt="">
+                                <ul class="d-flex product-icon list-unstyled gap-4">
+                                    <li><img class="icon-list" src="./assets/images/svg/store.svg" title="Add to Cart"
+                                            alt="">
+                                    </li>
+                                    <li><img class="icon-list" src="./assets/images/svg/search.svg" title="QuickView"
+                                            alt=""></li>
+                                    <li><img class="icon-list" src="./assets/images/svg/heart.svg"
+                                            title="Add to Wishlist" alt=""></li>
+                                </ul>
+                            </div>
+                            <div class="d-flex flex-column">
+                                <a class="" href="">Pumpkin Brownie Cupcakes</a> <br>
+                                <span class="text-center">$22.00
+                                </span>
+                            </div>
                         </div>
                     </div>
 
+                    <div class="row gx-4 gy-4">
+                        <div class="col-xl-3 col-lg-3 col-md-6 col-12">
+                            <div class="product-item">
+                                <img src="./assets/images/6.1.jpg" alt="">
+                                <ul class="d-flex product-icon list-unstyled gap-4">
+                                    <li><img class="icon-list" src="./assets/images/svg/store.svg" title="Add to Cart"
+                                            alt="">
+                                    </li>
+                                    <li><img class="icon-list" src="./assets/images/svg/search.svg" title="QuickView"
+                                            alt=""></li>
+                                    <li><img class="icon-list" src="./assets/images/svg/heart.svg"
+                                            title="Add to Wishlist" alt=""></li>
+                                </ul>
+                            </div>
+                            <div class="d-flex flex-column">
+                                <a class="" href="">Macarons</a> <br>
+                                <span class="text-center">$16.00
+                                </span>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-6 col-12">
+                            <div class="product-item">
+                                <img src="./assets/images/7.1.jpg" alt="">
+                                <ul class="d-flex product-icon list-unstyled gap-4">
+                                    <li><img class="icon-list" src="./assets/images/svg/store.svg" title="Add to Cart"
+                                            alt="">
+                                    </li>
+                                    <li><img class="icon-list" src="./assets/images/svg/search.svg" title="QuickView"
+                                            alt=""></li>
+                                    <li><img class="icon-list" src="./assets/images/svg/heart.svg"
+                                            title="Add to Wishlist" alt=""></li>
+                                </ul>
+                            </div>
+                            <div class="d-flex flex-column">
+                                <a class="" href="">Incredible Cotton</a> <br>
+                                <span class="text-center"><s class="px-3 old-price">$26.00</s>$22.00
+                                </span>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-6 col-12">
+                            <div class="product-item">
+                                <img src="./assets/images/8.1.jpg" alt="">
+                                <ul class="d-flex product-icon list-unstyled gap-4">
+                                    <li><img class="icon-list" src="./assets/images/svg/store.svg" title="Add to Cart"
+                                            alt="">
+                                    </li>
+                                    <li><img class="icon-list" src="./assets/images/svg/search.svg" title="QuickView"
+                                            alt=""></li>
+                                    <li><img class="icon-list" src="./assets/images/svg/heart.svg"
+                                            title="Add to Wishlist" alt=""></li>
+                                </ul>
+                            </div>
+
+                            <div class="d-flex flex-column">
+                                <a class="" href="">Incredible Copper Pants</a> <br>
+                                <span class="text-center">$22.00
+                                </span>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-6 col-12">
+                            <div class="product-item">
+                                <img src="./assets/images/15.1.jpg" alt="">
+                                <ul class="d-flex product-icon list-unstyled gap-4">
+                                    <li><img class="icon-list" src="./assets/images/svg/store.svg" title="Add to Cart"
+                                            alt="">
+                                    </li>
+                                    <li><img class="icon-list" src="./assets/images/svg/search.svg" title="QuickView"
+                                            alt=""></li>
+                                    <li><img class="icon-list" src="./assets/images/svg/heart.svg"
+                                            title="Add to Wishlist" alt=""></li>
+                                </ul>
+                            </div>
+                            <div class="d-flex flex-column">
+                                <a class="" href="">Ergonomic Granite Chair</a> <br>
+                                <span class="text-center"><s class="px-3 old-price">$15.00</s> $12.00
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab"
+                    tabindex="0">
+                    <div class="row gx-4 gy-4 mb-5">
+
+                        <div class="col-xl-3 col-lg-3 col-md-6 col-12">
+                            <div class="product-item">
+                                <img src="./assets/images/1.1.jpg" alt="">
+                                <ul class="d-flex product-icon list-unstyled gap-4">
+                                    <li><img class="icon-list" src="./assets/images/svg/store.svg" title="Add to Cart"
+                                            alt="">
+                                    </li>
+                                    <li><img class="icon-list" src="./assets/images/svg/search.svg" title="QuickView"
+                                            alt=""></li>
+                                    <li><img class="icon-list" src="./assets/images/svg/heart.svg"
+                                            title="Add to Wishlist" alt=""></li>
+                                </ul>
+                            </div>
+                            <div class="d-flex flex-column">
+                                <a class="" href="">Pumpkin Brownie Cupcakes</a> <br>
+                                <span class="text-center">$22.00
+                                </span>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-6 col-12">
+                            <div class="product-item">
+                                <img src="./assets/images/6.1.jpg" alt="">
+                                <ul class="d-flex product-icon list-unstyled gap-4">
+                                    <li><img class="icon-list" src="./assets/images/svg/store.svg" title="Add to Cart"
+                                            alt="">
+                                    </li>
+                                    <li><img class="icon-list" src="./assets/images/svg/search.svg" title="QuickView"
+                                            alt=""></li>
+                                    <li><img class="icon-list" src="./assets/images/svg/heart.svg"
+                                            title="Add to Wishlist" alt=""></li>
+                                </ul>
+                            </div>
+                            <div class="d-flex flex-column">
+                                <a class="" href="">Macarons</a> <br>
+                                <span class="text-center">$16.00
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-3 col-lg-3 col-md-6 col-12">
+                            <div class="product-item">
+                                <img src="./assets/images/7.1.jpg" alt="">
+                                <ul class="d-flex product-icon list-unstyled gap-4">
+                                    <li><img class="icon-list" src="./assets/images/svg/store.svg" title="Add to Cart"
+                                            alt="">
+                                    </li>
+                                    <li><img class="icon-list" src="./assets/images/svg/search.svg" title="QuickView"
+                                            alt=""></li>
+                                    <li><img class="icon-list" src="./assets/images/svg/heart.svg"
+                                            title="Add to Wishlist" alt=""></li>
+                                </ul>
+                            </div>
+                            <div class="d-flex flex-column">
+                                <a class="" href="">Incredible Cotton</a> <br>
+                                <span class="text-center"><s class="px-3 old-price">$26.00</s>$22.00
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-3 col-lg-3 col-md-6 col-12">
+                            <div class="product-item">
+                                <img src="./assets/images/8.1.jpg" alt="">
+                                <ul class="d-flex product-icon list-unstyled gap-4">
+                                    <li><img class="icon-list" src="./assets/images/svg/store.svg" title="Add to Cart"
+                                            alt="">
+                                    </li>
+                                    <li><img class="icon-list" src="./assets/images/svg/search.svg" title="QuickView"
+                                            alt=""></li>
+                                    <li><img class="icon-list" src="./assets/images/svg/heart.svg"
+                                            title="Add to Wishlist" alt=""></li>
+                                </ul>
+                            </div>
+
+                            <div class="d-flex flex-column">
+                                <a class="" href="">Incredible Copper Pants</a> <br>
+                                <span class="text-center">$22.00
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="row gx-4 gy-4">
+                        <div class="col-xl-3 col-lg-3 col-md-6 col-12">
+                            <div class="product-item">
+                                <img src="./assets/images/15.1.jpg" alt="">
+                                <ul class="d-flex product-icon list-unstyled gap-4">
+                                    <li><img class="icon-list" src="./assets/images/svg/store.svg" title="Add to Cart"
+                                            alt="">
+                                    </li>
+                                    <li><img class="icon-list" src="./assets/images/svg/search.svg" title="QuickView"
+                                            alt=""></li>
+                                    <li><img class="icon-list" src="./assets/images/svg/heart.svg"
+                                            title="Add to Wishlist" alt=""></li>
+                                </ul>
+                            </div>
+                            <div class="d-flex flex-column">
+                                <a class="" href="">Ergonomic Granite Chair</a> <br>
+                                <span class="text-center"><s class="px-3 old-price">$15.00</s> $12.00
+                                </span>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-6 col-12">
+
+                            <div class="product-item">
+                                <img src="./assets/images/14.1.jpg" alt="">
+                                <ul class="d-flex product-icon list-unstyled gap-4">
+                                    <li><img class="icon-list" src="./assets/images/svg/store.svg" title="Add to Cart"
+                                            alt="">
+                                    </li>
+                                    <li><img class="icon-list" src="./assets/images/svg/search.svg" title="QuickView"
+                                            alt=""></li>
+                                    <li><img class="icon-list" src="./assets/images/svg/heart.svg"
+                                            title="Add to Wishlist" alt=""></li>
+                                </ul>
+                            </div>
+                            <div class="d-flex flex-column">
+                                <a class="" href="">Custard Bun</a> <br>
+                                <span class="text-center"> $11.00
+                                </span>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-6 col-12">
+
+
+                            <div class="product-item">
+                                <img src="./assets/images/13.1.jpg" alt="">
+                                <ul class="d-flex product-icon list-unstyled gap-4">
+                                    <li><img class="icon-list" src="./assets/images/svg/store.svg" title="Add to Cart"
+                                            alt="">
+                                    </li>
+                                    <li><img class="icon-list" src="./assets/images/svg/search.svg" title="QuickView"
+                                            alt=""></li>
+                                    <li><img class="icon-list" src="./assets/images/svg/heart.svg"
+                                            title="Add to Wishlist" alt=""></li>
+                                </ul>
+                            </div>
+                            <div class="d-flex flex-column">
+                                <a class="" href="">Cupcake Queen</a> <br>
+                                <span class="text-center"><s class="px-3 old-price">$25.00</s> $23.00
+                                </span>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-6 col-12">
+
+
+                            <div class="product-item">
+                                <img src="./assets/images/12.1.jpg" alt="">
+                                <ul class="d-flex product-icon list-unstyled gap-4">
+                                    <li><img class="icon-list" src="./assets/images/svg/store.svg" title="Add to Cart"
+                                            alt="">
+                                    </li>
+                                    <li><img class="icon-list" src="./assets/images/svg/search.svg" title="QuickView"
+                                            alt=""></li>
+                                    <li><img class="icon-list" src="./assets/images/svg/heart.svg"
+                                            title="Add to Wishlist" alt=""></li>
+                                </ul>
+                            </div>
+                            <div class="d-flex flex-column">
+                                <a class="" href="">Circular Saws</a> <br>
+                                                <span class="text-center"><s class="px-3 old-price">$15.00</s> $13.00
+                              </span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab"
+                    tabindex="0">
+                    <div class="row gx-4 gy-4 mb-5">
+                        <div class="col-xl-3 col-lg-3 col-md-6 col-12">
+                            <div class="product-item">
+                                <img src="./assets/images/4.1.jpg" alt="">
+                                <ul class="d-flex product-icon list-unstyled gap-4">
+                                    <li><img class="icon-list" src="./assets/images/svg/store.svg" title="Add to Cart"
+                                            alt="">
+                                    </li>
+                                    <li><img class="icon-list" src="./assets/images/svg/search.svg" title="QuickView"
+                                            alt=""></li>
+                                    <li><img class="icon-list" src="./assets/images/svg/heart.svg"
+                                            title="Add to Wishlist" alt=""></li>
+                                </ul>
+                            </div>
+                            <div class="d-flex flex-column">
+                                <a class="" href="">Sweet Cakes</a> <br>
+                                <span class="text-center">$12.00
+                                </span>
+                            </div>
+
+                        </div>
+
+                        <div class="col-xl-3 col-lg-3 col-md-6 col-12">
+                            <div class="product-item">
+                                <img src="./assets/images/3.1.jpg" alt="">
+                                <ul class="d-flex product-icon list-unstyled gap-4">
+                                    <li><img class="icon-list" src="./assets/images/svg/store.svg" title="Add to Cart"
+                                            alt="">
+                                    </li>
+                                    <li><img class="icon-list" src="./assets/images/svg/search.svg" title="QuickView"
+                                            alt=""></li>
+                                    <li><img class="icon-list" src="./assets/images/svg/heart.svg"
+                                            title="Add to Wishlist" alt=""></li>
+                                </ul>
+                            </div>
+                            <div class="d-flex flex-column">
+                                <a class="" href="">Spider Cupcakes</a> <br>
+                                <span class="text-center">$13.00
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-3 col-lg-3 col-md-6 col-12">
+                            <div class="product-item">
+                                <img src="./assets/images/2.1.jpg" alt="">
+                                <ul class="d-flex product-icon list-unstyled gap-4">
+                                    <li><img class="icon-list" src="./assets/images/svg/store.svg" title="Add to Cart"
+                                            alt="">
+                                    </li>
+                                    <li><img class="icon-list" src="./assets/images/svg/search.svg" title="QuickView"
+                                            alt=""></li>
+                                    <li><img class="icon-list" src="./assets/images/svg/heart.svg"
+                                            title="Add to Wishlist" alt=""></li>
+                                </ul>
+                            </div>
+                            <div class="d-flex flex-column">
+                                <a class="" href="">Seasam Buns</a> <br>
+                                <span class="text-center">$24.00
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-3 col-lg-3 col-md-6 col-12">
+                            <div class="product-item">
+                                <img src="./assets/images/1.1.jpg" alt="">
+                                <ul class="d-flex product-icon list-unstyled gap-4">
+                                    <li><img class="icon-list" src="./assets/images/svg/store.svg" title="Add to Cart"
+                                            alt="">
+                                    </li>
+                                    <li><img class="icon-list" src="./assets/images/svg/search.svg" title="QuickView"
+                                            alt=""></li>
+                                    <li><img class="icon-list" src="./assets/images/svg/heart.svg"
+                                            title="Add to Wishlist" alt=""></li>
+                                </ul>
+                            </div>
+                            <div class="d-flex flex-column">
+                                <a class="" href="">Pumpkin Brownie Cupcakes</a> <br>
+                                <span class="text-center">$22.00
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row gx-4 gy-4">
+                        <div class="col-xl-3 col-lg-3 col-md-6 col-12">
+                            <div class="product-item">
+                                <img src="./assets/images/6.1.jpg" alt="">
+                                <ul class="d-flex product-icon list-unstyled gap-4">
+                                    <li><img class="icon-list" src="./assets/images/svg/store.svg" title="Add to Cart"
+                                            alt="">
+                                    </li>
+                                    <li><img class="icon-list" src="./assets/images/svg/search.svg" title="QuickView"
+                                            alt=""></li>
+                                    <li><img class="icon-list" src="./assets/images/svg/heart.svg"
+                                            title="Add to Wishlist" alt=""></li>
+                                </ul>
+                            </div>
+                            <div class="d-flex flex-column">
+                                <a class="" href="">Macarons</a> <br>
+                                <span class="text-center">$16.00
+                                </span>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-6 col-12">
+                            <div class="product-item">
+                                <img src="./assets/images/7.1.jpg" alt="">
+                                <ul class="d-flex product-icon list-unstyled gap-4">
+                                    <li><img class="icon-list" src="./assets/images/svg/store.svg" title="Add to Cart"
+                                            alt="">
+                                    </li>
+                                    <li><img class="icon-list" src="./assets/images/svg/search.svg" title="QuickView"
+                                            alt=""></li>
+                                    <li><img class="icon-list" src="./assets/images/svg/heart.svg"
+                                            title="Add to Wishlist" alt=""></li>
+                                </ul>
+                            </div>
+                            <div class="d-flex flex-column">
+                                <a class="" href="">Incredible Cotton</a> <br>
+                                <span class="text-center"><s class="px-3 old-price">$26.00</s>$22.00
+                                </span>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-6 col-12">
+                            <div class="product-item">
+                                <img src="./assets/images/8.1.jpg" alt="">
+                                <ul class="d-flex product-icon list-unstyled gap-4">
+                                    <li><img class="icon-list" src="./assets/images/svg/store.svg" title="Add to Cart"
+                                            alt="">
+                                    </li>
+                                    <li><img class="icon-list" src="./assets/images/svg/search.svg" title="QuickView"
+                                            alt=""></li>
+                                    <li><img class="icon-list" src="./assets/images/svg/heart.svg"
+                                            title="Add to Wishlist" alt=""></li>
+                                </ul>
+                            </div>
+
+                            <div class="d-flex flex-column">
+                                <a class="" href="">Incredible Copper Pants</a> <br>
+                                <span class="text-center">$22.00
+                                </span>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-6 col-12">
+                            <div class="product-item">
+                                <img src="./assets/images/15.1.jpg" alt="">
+                                <ul class="d-flex product-icon list-unstyled gap-4">
+                                    <li><img class="icon-list" src="./assets/images/svg/store.svg" title="Add to Cart"
+                                            alt="">
+                                    </li>
+                                    <li><img class="icon-list" src="./assets/images/svg/search.svg" title="QuickView"
+                                            alt=""></li>
+                                    <li><img class="icon-list" src="./assets/images/svg/heart.svg"
+                                            title="Add to Wishlist" alt=""></li>
+                                </ul>
+                            </div>
+                            <div class="d-flex flex-column">
+                                <a class="" href="">Ergonomic Granite Chair</a> <br>
+                                <span class="text-center"><s class="px-3 old-price">$15.00</s> $12.00
+                                </span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+    
+
 
 </section>
 
@@ -239,11 +737,11 @@
                                 <span>New</span>
                             </div>
                         </div>
-                        
+
                         <div class="info-product">
                             <h5>Sweet Cakes</h5>
                             <p class="">$12.00</p>
-                            <div class="description">Things You Need To Know There  are  many variations of...
+                            <div class="description">Things You Need To Know There are many variations of...
                             </div>
 
                             <div class="info-icon">
@@ -264,7 +762,7 @@
                     </div>
                 </div>
             </div>
-            
+
             <div class="col-xl-6 col-lg-6 col-md-6 col-12">
                 <div class="product-countdown">
                     <div class="item-product d-flex ">
@@ -273,7 +771,7 @@
                             <div class="top-icon">
                                 <span>New</span>
                             </div>
-                            
+
                         </div>
                         <div class="info-product">
                             <h5>Spider Cupcakes</h5>
@@ -313,45 +811,47 @@
 
 
         <div class="blog-item">
-        <div class="row gx-2 gy-5">
+            <div class="row gx-2 gy-5">
                 <div class="col-xl-6 col-lg-6 col-lg-6 col-12">
                     <div class="blog-content">
                         <h4 class="text-capitalize">The Most Useful Things For You</h4>
-                        <p>What Is Your Favorite Non-Premium Designer Bag? I got my first premium designer bag when I was in middle school. It was something I wished for,  pined for, dreamed for...
+                        <p>What Is Your Favorite Non-Premium Designer Bag? I got my first premium designer bag when I
+                            was in middle school. It was something I wished for, pined for, dreamed for...
                         </p>
                         <a class="text-uppercase" href="">Read More</a>
                     </div>
                 </div>
-            
+
                 <div class="col-xl-6 col-lg-6 col-lg-6 col-12">
                     <div class="blog-image">
                         <img src="assets/images/blog5_1024x1024.jpg" alt="">
                     </div>
                 </div>
             </div>
-            </div>
+        </div>
 
-            <div class="blog-item2 blog-item">
-        <div class="row gx-2 gy-5">
+        <div class="blog-item2 blog-item">
+            <div class="row gx-2 gy-5">
 
 
-            <div class="col-xl-6 col-lg-6 col-lg-6 col-12 order2">
-                <div class="blog-image">
-                    <img src="assets/images/blog4_1024x1024.jpg" alt="">
+                <div class="col-xl-6 col-lg-6 col-lg-6 col-12 order2">
+                    <div class="blog-image">
+                        <img src="assets/images/blog4_1024x1024.jpg" alt="">
+                    </div>
                 </div>
-            </div>
 
                 <div class="col-xl-6 col-lg-6 col-lg-6 col-12">
                     <div class="blog-content ms-5">
 
                         <h4 class="text-capitalize">What we need to Know</h4>
-                        <p>I got my first premium designer bag when I was in middle school. It was something I wished for, pined for, dreamed for and worked hard for. As soon as...
+                        <p>I got my first premium designer bag when I was in middle school. It was something I wished
+                            for, pined for, dreamed for and worked hard for. As soon as...
                         </p>
                         <a class="text-uppercase" href="">Read More</a>
                     </div>
                 </div>
-            
-               
+
+
             </div>
         </div>
     </div>

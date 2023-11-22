@@ -704,13 +704,32 @@ header ul .nav-link:hover {
     bottom: 0;
 }
 
-.best-sell-section .tab-section .tab-btn {
+.best-sell-section .tab-section ul {
     margin-top: 2rem;
     margin-bottom: 5rem;
     overflow: hidden;
     display: flex;
     justify-content: center;
 }
+
+.best-sell-section .tab-section .tab-btn button {
+    background: transparent;
+    display: inline-block;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #ff91af;
+    min-width: 11rem;
+    height: 4.2rem;
+    border: .1rem solid #ff91af;
+    padding: 0 1.5rem;
+    text-align: center;
+    cursor: pointer;
+    transition: all .25s linear 0s;
+    -webkit-transition: all .25s linear 0s;
+    -o-transition: all .25s linear 0s;
+    margin: 0 1rem;
+}
+
 
 .best-sell-section .tab-section .tab-btn button:hover {
     background-color: #ff91af;
@@ -726,26 +745,6 @@ header ul .nav-link:hover {
     display: none;
     border-top: none;
 }
-
-.best-sell-section .tab-section .tab-btn button {
-    background: transparent;
-    display: inline-block;
-    font-size: 1.3rem;
-    font-weight: 500;
-    color: #ff91af;
-    text-transform: uppercase;
-    min-width: 11rem;
-    height: 4.2rem;
-    border: .1rem solid #ff91af;
-    padding: 0 1.5rem;
-    text-align: center;
-    cursor: pointer;
-    transition: all .25s linear 0s;
-    -webkit-transition: all .25s linear 0s;
-    -o-transition: all .25s linear 0s;
-    margin: 0 1rem;
-}
-
 
 .section-banner {
     margin-top: 7rem;
