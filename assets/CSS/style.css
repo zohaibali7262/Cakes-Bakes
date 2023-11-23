@@ -676,6 +676,52 @@ header ul .nav-link:hover {
 
 /* Home2 CSS */
 
+
+.image-banner{
+    margin-top: 7rem;
+}
+
+.image-banner img{
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.image-banner 
+.img-banner-content a{
+    font-size: 4rem;
+    line-height: 1;
+    font-weight: 500;
+    padding-bottom: 2rem ;
+    transition: all .3s;
+    text-decoration: none;
+    color: black;
+    display: flex;
+    justify-content: center;
+}
+
+.img-banner-content a:hover{
+    color: #ff91af;
+}
+
+.img-banner-content p{
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.6;
+    margin: 0;
+    white-space: nowrap;
+    
+}
+
+
+
+.image-banner .img-banner-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
 .best-sell-section {
     margin-top: 7rem;
 }
@@ -1069,10 +1115,21 @@ header ul .nav-link:hover {
         padding:1rem;
         background: #ffd2d1;
     }
+
+    
+  .navbar-nav 
+   .home-content{
+        margin-left: 25px !important;
+    }
 }
 
-@media screen and (min-width: 310px) and (max-width: 768px) {
+@media screen and (min-width: 250px) and (max-width: 768px) {
 
+
+  .navbar-nav 
+   .home-content{
+        margin-left: 19px !important;
+    }
 
     .section-banner .img-banner img {
         height: 40rem;
@@ -1120,6 +1177,13 @@ header ul .nav-link:hover {
     }
 
     /* Home2 Media Query CSS */
+
+.img-banner-content p{
+
+    white-space: inherit;
+
+    }
+
 
     .order2 {
         order: 2;
