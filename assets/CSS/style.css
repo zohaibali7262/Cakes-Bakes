@@ -6,7 +6,7 @@ html {
     }
 
     @media (max-width: 1200px) {
-        font-size: 9.722222222222221px;
+        font-size: 10px;
     }
 
     @media (max-width: 992px) {
@@ -1083,9 +1083,30 @@ header ul .nav-link:hover {
     margin-top: 5rem;
 }
 
-   
+.footeer{
+    padding: 0 !important;
+    background: #f9f9f9;
+}
+
+.footeer .left-border{
+    border-right: 1px solid #dddddd6e;
+    padding: 50px 0 40px 30px !important;
+}
+
+.right-border{
+    border-left: 1px solid #dddddd6e ;
+ 
+}
 
 
+
+.footeer .input-form input {
+    outline: none;
+    border: none;
+    font-size: 2rem;
+    width: 22rem !important;
+    padding:1rem ;
+}
 
 
 
@@ -1102,11 +1123,7 @@ header ul .nav-link:hover {
 /* Media Queries Part */
 
 
-@media screen and (min-width: 1024px) and (max-width: 1440px) {
-    .section-banner .content-banner {
-        /* padding: 5rem; */
-}
-}
+
 
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
@@ -1121,7 +1138,15 @@ header ul .nav-link:hover {
    .home-content{
         margin-left: 25px !important;
     }
+
+    
+.footeer .left-border, .footeer .right-border {
+    border: none;
+
 }
+}
+
+
 
 @media screen and (min-width: 250px) and (max-width: 768px) {
 
@@ -1200,9 +1225,12 @@ header ul .nav-link:hover {
         height: 100%;
     }
 
-    .product-countdown .info-product {
-        /* margin: 0 auto !important; */
-    }
+    
+.footeer .left-border{
+    border-right: none;
+    padding: 10px 0 15px 30px !important;
+}
+
 
 
 
